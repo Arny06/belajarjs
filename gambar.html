@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-position: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <img id="gambar" src="Masha_off.jpg" width="100%">
+    
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        var stsgambar = false;
+        $("#gambar").click(function(){
+        if(stsgambar){
+        stsgambar = false;
+        $("#gambar").attr("src","Masha_on.jpg");
+        $("#kata").text("BAAAA!!");
+    } else {
+        stsgambar = true;
+        $("#gambar").attr("src","Masha_off.jpg");
+         $("#kata").text("CILUKK!!");
+    }
+    });
+    </script>
+
+</body>
+</html>
